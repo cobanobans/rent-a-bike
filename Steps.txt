@@ -1,0 +1,5 @@
+.bike-card has position absolute - we  multiply its index by 100 in js, to get it translated, in for each node.
+
+* * *notes: 
+- when option is chosen, show only that option, the rest should disappear, make this using animation, then calendar should appear, for user to chose date ( location optional)
+- explore bikes or something similar, animation arrows pointing down, instead of ugly btn...

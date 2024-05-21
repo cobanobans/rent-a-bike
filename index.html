@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reta-a-bici</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./calendar.css" />
+    <!-- FLATPICKR -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    /> -->
+    <!-- <link href="css/dycalendar.min.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="./calendar.css" /> -->
+  </head>
+  <body>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ASIDE -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="aside">
+      <ul class="nav-list">
+        <li><a href="#services">services</a></li>
+        <li><a href="#bikes">bikes</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#" class="login">Login</a></li>
+      </ul>
+      <ul class="list-social">
+        <li>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!-- END OF ASIDE -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- NAV -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-bar">
+          <div class="logo-container">
+            <img src="./logo.png" alt="" />
+            <h2>biciklon</h2>
+          </div>
+          <div class="links-container">
+            <ul class="nav-list">
+              <li><a href="#">rent-a-bike</a></li>
+              <li><a href="#bikes">bikes</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li><a href="#" class="login">Login</a></li>
+            </ul>
+          </div>
+          <div class="toggle-list"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="banner">
+          <h1>Belgrade Bike Rental</h1>
+          <ul class="list-social">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- END OF NAV -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- MESSAGE -->
+      <!-- <div class="message">
+
+      </div> -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- section services -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <section class="section-services" id="services">
+        <!-- <div class="section-services-container"> -->
+        <!-- <article class="services-bike-card">
+            <h1>Hello,</h1>
+          </article> -->
+        <div class="main-container">
+          <div class="main-container-bikes">
+            <!-- <p>click to</p> -->
+
+            <h3>
+              See Bikes<br />
+              Selection
+            </h3>
+          </div>
+          <div class="main-container-plan">
+            <article class="select-plan">
+              <h1 class="plan-heading">Choose your option</h1>
+              <ul class="list-prices">
+                <li class="option">1 hour: <span class="price">$4.99</span></li>
+                <li class="option">
+                  2 hours: <span class="price">$5.99</span>
+                </li>
+                <li class="option">
+                  6 hours: <span class="price">$6.99</span>
+                </li>
+                <li class="option">
+                  24 hours: <span class="price">$9.99</span>
+                </li>
+              </ul>
+            </article>
+            <article class="select-date hidden">
+              <p class="back">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> back to
+                plans
+              </p>
+
+              <h1>Choose your Date</h1>
+              <table class="calendar-table">
+                <tr>
+                  <th colspan="7">
+                    <!-- <button onclick="prevMonth()">&#8249;</button> -->
+                    <button class="prevMonthBtn">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <span id="month-year"></span>
+
+                    <!-- <button onclick="nextMonth()">&#8250;</button> -->
+                    <button class="nextMonthBtn">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                </tr>
+                <tbody id="calendar-body"></tbody>
+              </table>
+            </article>
+          </div>
+        </div>
+
+        <!-- button - jump to bikes -->
+        <!--  -->
+        <!-- <div class="select-bike">
+          <i class="fa-solid fa-chevron-down fa-2xl arrow-down-1"></i>
+          <button class="bike-button">
+            <a href="#bikes">or Choose Your Bike First</a>
+          </button>
+        </div> -->
+        <!-- </div> -->
+        <!--  -->
+        <!--  -->
+      </section>
+    </div>
+    <!-- end of sect services -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- <div class="current-option hidden"></div> -->
+
+    <!-- section bikes -->
+    <section class="section-bikes" id="bikes">
+      <div class="current-option hidden"></div>
+
+      <div class="arrow arrow-left">
+        <img src="./arrow left.png" alt="left arrow" />
+      </div>
+      <div class="arrow arrow-right">
+        <img src="./arrow right.png" alt="right arrow" />
+      </div>
+      <div class="section-bikes-container">
+        <article class="bike-card active">
+          <div class="card-img">
+            <img class="bike-img" src="./bike-image-1.jpg" alt="bike image" />
+          </div>
+          <div class="card-text">
+            <h2>City bike</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              unde?
+            </p>
+            <ul class="bike-specs">
+              <li>
+                speed:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                comfort:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                weight:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bike-card second">
+          <div class="card-img">
+            <img class="bike-img" src="./e-bike-2.jpg" alt="bike image" />
+          </div>
+          <div class="card-text">
+            <h2>Electric bike</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              unde?
+            </p>
+            <ul class="bike-specs">
+              <li>
+                speed:
+                <span class="meter">
+                  <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                comfort:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                weight:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bike-card second">
+          <div class="card-img">
+            <img class="bike-img" src="./mountain-bike.jpg" alt="bike image" />
+          </div>
+          <div class="card-text">
+            <h2>Mountain bike</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              unde?
+            </p>
+            <ul class="bike-specs">
+              <li>
+                speed:
+                <span class="meter">
+                  <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                comfort:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                weight:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bike-card second last">
+          <div class="card-img">
+            <img class="bike-img" src="./touring-bike.jpg" alt="bike image" />
+          </div>
+          <div class="card-text">
+            <h2>Touring Bike</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              unde?
+            </p>
+            <ul class="bike-specs">
+              <li>
+                speed:
+                <span class="meter">
+                  <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                comfort:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+              <li>
+                weight:
+                <span class="meter">
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="btn btn-select"><h3>Rent Bike</h3></div>
+    </section>
+
+    <!-- end of section bikes -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Contact Section -->
+    <section class="section-contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-card">
+          <h2 class="contact-title">Contact Information</h2>
+          <ul class="contact-details">
+            <li><strong>Address:</strong> 123 Bike Lane, Belgrade, Serbia</li>
+            <li><strong>Phone:</strong> +381 11 123 4567</li>
+            <li><strong>Email:</strong> info@biciklon.com</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <h2 class="contact-title">Working Hours</h2>
+          <ul class="contact-details">
+            <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+            <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- MODAL   -->
+    <div class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-plan">
+          <h3>Your plan: <span class="modal-plan-info"></span></h3>
+        </div>
+        <div class="modal-bike"></div>
+        <div class="modal-location">
+          <h3>
+            Your bike will be ready on:
+            <span class="modal-date">monday, september 21 2003</span>
+          </h3>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13706.270187571228!2d21.863928132954104!3d43.76479647240449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47541871508496ff%3A0xda79539dd48b7b66!2sRtanj!5e0!3m2!1sit!2srs!4v1690294417283!5m2!1sit!2srs"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-button-rent">
+          <button class="btn btn-rent">RENT</button>
+        </div>
+      </div>
+      <span class="close"><i class="fas fa-close fa-2xl"></i></span>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="notification-container hidden">
+      <div class="check-icon">
+        <i class="fa-solid fa-check fa-xl"></i>
+      </div>
+      <div class="notification-message">
+        <h3>Bike Selected</h3>
+        <p>Please Choose Plan To Fit Your Needs.</p>
+      </div>
+    </div>
+    <!--  -->
+    <!-- footer -->
+    <footer></footer>
+    <!-- end footer -->
+  </body>
+  <script src="https://use.fontawesome.com/d28c5c1e2b.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- <script src="js/dycalendar-jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script> -->
+
+  <script src="./index.js"></script>
+</html>
